@@ -1,0 +1,196 @@
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://r2.erweima.ai/imgcompressed/img/compressed_e410361d39717cc68bbabc38f55044ee.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'MedievalSharp', serif; 
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: black;
+    border: 2px solid rgb(51, 51, 51);
+}
+.cabecalho {
+    height: 100px;
+    max-height: 150px;
+}
+nav {
+    display: flex;
+    height: 40px;
+    max-height: 40px;
+    border: 2px solid black;
+    background-color: rgb(83, 80, 80);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    border-radius: 15%;
+    background-color: rgb(148, 134, 134);
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+button a {
+    text-decoration: none; 
+    color: inherit; 
+    display: inline-block; 
+    color: white;
+    font-family: 'MedievalSharp', serif; 
+}
+/* CSS DO index.html*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+}
+h1, h2, h3 {
+    display: flex;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h1,h2,h3 {
+    font-size: 2em;
+}
+.temaprincipal {
+    font-size: 1.2rem; 
+    color: #fff; 
+    text-align: justify;
+    line-height: 1.5;   
+}
+.meio {
+    display: grid;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10%;
+    margin-bottom: 15px;   
+}
+
+/* CSS DA PAGINA download.index*/
+.container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    width: 300px;
+    margin: 0 auto;
+}
+.image-conteiner {
+    border: 1px solid red;
+    height: 300px;
+    width: 200px;
+    transition: transform 0.5s ease; 
+    margin: 10px;
+}
+.image-conteiner:hover {
+    transform: scale(1.1);
+}
+.texto {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: justify;
+    height: auto;
+    line-height: 1.5;
+    width: 180px;
+    background-color: rgba(20, 27, 34, 0.685);
+}
+/* Codigo do footer e span */
+footer {
+    display: flex;
+    grid-template-columns: 1fr;
+    border: 2px solid black;
+    background-color: rgb(80, 68, 68);
+    color: rgba(255, 255, 255, 0.555);
+    padding: 15px;
+    margin: 10px;
+    row-gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+span {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: smaller;
+}
+footer a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    width: 150px;
+    border-radius: 25%;
+}
+.imgfooter {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; 
+}
+.imgfooter:hover, .socialink:hover {
+    background-color: black;
+    transition: backgroundcolor 0.3s ease;
+}
+/* Codigo da botão table bootstrap*/
+.card {
+    background-color: #5a545441; /* Mudar a cor de fundo */
+    border: 1px solid #ccc; /* Adicionar uma borda */
+    border-radius: 8px; /* Arredondar os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar uma sombra */
+    color: white;
+}
+.card-title {
+    font-weight: bold;
+    color: #e6dede;
+}
+
+@media (min-width: 1090px) {
+    .container-box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .image-conteiner {
+        height: 300px;
+        width: 200px;
+        margin: 0 30px;
+    }
+    .texto {
+        margin: 30px;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
